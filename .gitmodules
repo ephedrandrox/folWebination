@@ -1,0 +1,6 @@
+[submodule "src/lib/dojo/dojo"]
+	path = src/lib/dojo/dojo
+	url = https://git@github.com/dojo/dojo.git
+[submodule "src/lib/dojo/dojox"]
+	path = src/lib/dojo/dojox
+	url = https://git@github.com/dojo/dojox.git
