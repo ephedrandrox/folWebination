@@ -1,6 +1,6 @@
 var profile = (function () {
     return {
-        basePath: "./src",
+        basePath: "./",
         releaseDir: "./release",
         releaseName: "folWebination",
         action: "release",
@@ -62,20 +62,20 @@ var profile = (function () {
 
         packages: [{
             name: "dojo",
-            location: "./lib/dojo/dojo"
+            location: "./src/lib/dojo/dojo"
         }, {
             name: "dojox",
-            location: "./lib/dojo/dojox"
+            location: "./src/lib/dojo/dojox"
         }, {
             name: "dijit",
-            location: "./lib/dojo/dijit"
+            location: "./src/lib/dojo/dijit"
         }, {
             name: "fol",
-            location: "./fol"
+            location: "./src/fol"
         },
             {
                 name: "ui",
-                location: "./ui"
+                location: "./src/ui"
             }],
 
         layers: {

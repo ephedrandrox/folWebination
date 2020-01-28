@@ -46,13 +46,6 @@
     require([ "fol/flowerOfLife",  "ready!" ], function (flowerOfLife) {
         Workspace._flowerBackground = new flowerOfLife();
         Workspace._flowerBackground.createFlower(2);
-
-        setTimeout(function(){
-
-            Workspace._flowerBackground.createFlower(7);
-
-        }, 3000);
-
     });
 </script>
 </body>
