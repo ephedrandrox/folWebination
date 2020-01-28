@@ -5,6 +5,7 @@ Flower Of Life Web Animation
 To git the dojo libraries and build utils, init and update the submodules
 
 ```git submodule init```
+
 ```git submodule update```
 
 
