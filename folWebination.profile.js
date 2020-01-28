@@ -1,7 +1,7 @@
 var profile = (function () {
     return {
         basePath: "./",
-        releaseDir: "./release",
+        releaseDir: "./releaseBuild",
         releaseName: "folWebination",
         action: "release",
 

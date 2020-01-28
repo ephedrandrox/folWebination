@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "./src/lib/dojo/util/buildscripts/build.sh --profile ./folWebination.profile.js --language_in=ECMASCRIPT6"
+    "build": "./src/lib/dojo/util/buildscripts/build.sh --profile ./folWebination.profile.js --language_in=ECMASCRIPT6 && mkdir -p release/dojo && cp releaseBuild/folWebination/dojo/dojo.js release/dojo/dojo.js"
   },
   "name": "folWebination",
 "description": "Flower of life web animation",
