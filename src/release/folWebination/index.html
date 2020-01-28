@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flower Of Life Animation</title>
+</head>
+<body style="padding: 0; margin: 0;">
+<script>
+    dojoConfig = {
+        has: {
+            "dojo-firebug": false,
+            "dojo-debug-messages": false
+        },
+        // Don't attempt to parse the page for widgets
+        parseOnLoad: false,
+        packages: [
+            {
+                name: "dojo",
+                location: "dojo/dojo"
+            },
+            {
+                name: "dojox",
+                location: "dojo/dojox"
+            },
+            {
+                name: "fol",
+                location: "fol"
+            }
+        ],
+        baseUrl: '',
+        // Timeout after 10 seconds
+        waitSeconds: 10,
+        aliases: [
+            ["ready", "dojo/domReady"]
+        ],
+        // Get "fresh" resources
+        cacheBust: false,
+        async:true,
+        gfxRenderer: "svg,silverlight,vml"
+    };
+</script>
+<script src="dojo/dojo.js"></script>
+<script>
+    var Workspace = {};
+
+    require([ "fol/flowerOfLife",  "ready!" ], function (flowerOfLife) {
+        Workspace._flowerBackground = new flowerOfLife();
+        Workspace._flowerBackground.createFlower(2);
+
+        setTimeout(function(){
+
+            Workspace._flowerBackground.createFlower(7);
+
+        }, 3000);
+
+    });
+</script>
+</body>
+</html>

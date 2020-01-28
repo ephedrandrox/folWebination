@@ -1,5 +1,4 @@
-debugger;
-define([ 'dojo/_base/declare', "fol/ui/background", "fol/ui/canvas", "fol/flowerCircle", "dojo/fx", "dojox/gfx", "dojox/gfx/fx"],
+define([ 'dojo/_base/declare', "ui/background", "ui/canvas", "fol/flowerCircle", "dojo/fx", "dojox/gfx", "dojox/gfx/fx"],
 		 function (declare, background, canvas, flowerCircle, fx, gfx, gfxFx) {
 		
 		return declare("FOLBackground", [background, canvas], {
@@ -101,7 +100,7 @@ define([ 'dojo/_base/declare', "fol/ui/background", "fol/ui/canvas", "fol/flower
 				let centerPoint = this.getLayerCenterPoint();
 
 
-		          newCircleGrow = gfxFx.animateTransform({
+		         let  newCircleGrow = gfxFx.animateTransform({
 		            duration: 30000,
 		            shape: this._flower,
 		            transform: 

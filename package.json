@@ -1,5 +1,9 @@
-{"name": "folWebination",
-"description": "Flow of life web animation",
+{
+  "scripts": {
+    "build": "./src/lib/dojo/util/buildscripts/build.sh --profile ./folWebination.profile.js --language_in=ECMASCRIPT6"
+  },
+  "name": "folWebination",
+"description": "Flower of life web animation",
 "version": "0.0.1",
 "main": "folWebination.profile.js",
 "repository": {
@@ -7,5 +11,5 @@
 "url": "ssh://git@github.com/ephedrandrox/folWebination.git"
 },
 "author": "Blake Glanville",
-"license": "BSD3"
+"license": "BSD-3-Clause"
 }

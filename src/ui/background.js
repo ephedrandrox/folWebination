@@ -1,4 +1,4 @@
-define([ 'dojo/_base/declare', "fol/ui/layer", "dojo/dom-style"],
+define([ 'dojo/_base/declare', "ui/layer", "dojo/dom-style"],
 		 function (declare, layer, domStyle ) {
 		
 		return declare("UIBackground", layer, {
